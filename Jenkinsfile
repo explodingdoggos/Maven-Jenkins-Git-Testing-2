@@ -1,9 +1,9 @@
 pipeline {
     agent any
-    tools {
-        maven 'Maven 3.6.1'
-        jdk 'jdk8'
+    environment {
+        PATH = "C:/Oracle/Middleware/Oracle_Home/oracle_common/modules/thirdparty/apache-maven_bundle/3.6.1.0.0/apache-maven-3.6.1/bin:$PATH"
     }
+
     stages {
         stage('Build') {
             steps {
@@ -13,11 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-             	sh '''
-                    	echo "PATH = ${PATH}"
-                    	echo "M2_HOME = ${M2_HOME}"
-                   '''
-                sh 'mvn clean install'
+                sh 'mvn clean install test'
             }
         }
         stage('Deploy') {
