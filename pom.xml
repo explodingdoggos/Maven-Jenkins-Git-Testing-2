@@ -48,12 +48,18 @@ http://maven.apache.org/xsd/maven-4.0.0.xsd">
       <version>${junit.version}</version>
       <scope>test</scope>
     </dependency>
-        <dependency>
+    <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>6.8.8</version>
             <scope>compile</scope>
-        </dependency>
+    </dependency>
+	<dependency>
+    	<groupId>org.apache.poi</groupId>
+    	<artifactId>poi</artifactId>
+    	<version>5.2.2</version>
+	</dependency>
+    
   </dependencies>
 
 </project>

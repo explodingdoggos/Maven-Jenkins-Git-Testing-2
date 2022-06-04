@@ -49,6 +49,11 @@ public class Selenium {
     	Assert.assertNotEquals(driver.getCurrentUrl(), null);
 	}
 	
+	@Test
+	public void test4() {
+		Assert.assertEquals(1,1);
+	}
+	
 //	@Test
 //	public void test3() {
 //		driver.get("https://mail.google.com/mail/u/0/#inbox");
