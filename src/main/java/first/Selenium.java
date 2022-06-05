@@ -1,4 +1,6 @@
 package first;
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,6 +44,7 @@ public class Selenium {
 		WebElement element = driver.findElement(By.name("search_query"));
 		element.sendKeys("Testing");
 		element.submit();
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebElement element2 = driver.findElement(By.linkText("Software Testing Full Course In 10 Hours | Software Testing Tutorial | Edureka"));
 		element2.click();
     	System.out.println("Page URL is: " + driver.getCurrentUrl());
