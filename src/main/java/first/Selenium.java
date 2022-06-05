@@ -49,12 +49,18 @@ public class Selenium {
 		element2.click();
     	System.out.println("Page URL is: " + driver.getCurrentUrl());
     	Assert.assertEquals(driver.getCurrentUrl(), "https://www.youtube.com/watch?v=sO8eGL6SFsA");
+    	Assert.assertNotEquals(driver.getCurrentUrl(), "https://www.youtube.com/watch?v=2v3R2c1fG9c");
     	Assert.assertNotEquals(driver.getCurrentUrl(), null);
 	}
 	
 	@Test
 	public void test4() {
 		Assert.assertEquals(1,1);
+	}
+	
+	@Test
+	public void test5() {
+		
 	}
 	
 //	@Test

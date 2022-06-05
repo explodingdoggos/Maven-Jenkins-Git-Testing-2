@@ -3,13 +3,13 @@
 <suite parallel="none" name="Failed suite [Default suite]">
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="first.Selenium">
+      <class name="Second.SeleniumTestNG">
         <methods>
-          <include name="test2"/>
-          <include name="afterAll"/>
           <include name="beforeAll"/>
+          <include name="afterAll"/>
+          <include name="MainTest"/>
         </methods>
-      </class> <!-- first.Selenium -->
+      </class> <!-- Second.SeleniumTestNG -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
