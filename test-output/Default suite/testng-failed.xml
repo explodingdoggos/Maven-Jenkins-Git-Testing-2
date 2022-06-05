@@ -5,7 +5,7 @@
     <classes>
       <class name="first.Selenium">
         <methods>
-          <include name="test3"/>
+          <include name="test2"/>
           <include name="afterAll"/>
           <include name="beforeAll"/>
         </methods>
